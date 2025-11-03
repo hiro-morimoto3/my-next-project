@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 
-import NewList from "@/app/_components/NewList";
+import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/Button_Link";
 import { News } from "@/app/_libs/microcms";
 
@@ -61,7 +61,7 @@ export default function Home() {
       </section>
       <section className={styles.news}>
         <h2 className={styles.newsTitle}>News</h2>
-        <NewList news={sliceData} />
+        <NewsList news={sliceData} />
         <div className={styles.newsLink}>
           <ButtonLink href="/news">もっと見る</ButtonLink>
         </div>
